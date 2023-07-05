@@ -11,7 +11,7 @@ import java.util.Scanner;
  * 출력 #1 : 4 + 5 = 9
  * 
  */
-public class Solution3 {
+public class Solution6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
