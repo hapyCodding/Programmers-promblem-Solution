@@ -1,25 +1,19 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Solution10 {
-    
 
-    public void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String my_String = sc.next();
-        String overwrite_string = sc.next();
-        int s = sc.nextInt();
+    public static void main(String[] args) {
+        String my_string = "He11oWor1d";
+        String overwrite_string = "lloWorl";
+        int s = 2;
 
-        sc.close();
+        String answer = my_string.substring(0, s) + overwrite_string;
 
-        String answer = solution(my_String, overwrite_string, s);
+        if(my_string.length() > answer.length()) {
+            answer += my_string.substring(answer.length());
+        }
         
         System.out.println(answer);
-    }
-
-    public String solution(String my_string, String overwrite_string, int s) {
-        System.out.println(my_string.toCharArray(2));
-
-        String answer = "";
-        return answer;
     }
 }
